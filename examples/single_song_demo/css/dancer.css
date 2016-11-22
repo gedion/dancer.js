@@ -21,6 +21,7 @@ body {
     background-color: #111;
     color: #ccc;
     font-family: 'League Gothic', arial, sans-serif;
+    display: none;
 }
 #info h1 {
     margin: 0 0 0 20px;

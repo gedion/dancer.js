@@ -3,22 +3,47 @@
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
 		<link href='css/dancer.css' rel='stylesheet' type='text/css'>
+  <link href="http://textillate.js.org/assets/animate.css" rel="stylesheet">
+  <link href="http://textillate.js.org/assets/style.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+
+        <style>
+            .playground .viewport .tlt {
+                display: table-row;
+            }
+            body {
+                font-size: 35;
+                width: 100%;
+            }
+        </style>
 	</head>
 	<body>
+<div class="grid grid-pad">
+    <section class="col-1-1">
+        <div class="playground grid">
+          <div class="col-1-1 viewport">
+              <div class="tlt">
+                <ul class="texts" style="display: block">
+                </ul>
+              </div>
+              <div class="tlt">
+                <ul class="texts" style="display: block">
+                </ul>
+              </div>
+          </div>
+         </div>
+        </div>
+    </section>
+</div>
+
 		<div id="info">
-			<h1>dancer.js</h1>
-			<h2>JavaScript Audio Library</h2>
-			<a id="togglefft" href="#">toggle FFT spectrum</a>
 			<canvas id="fft" height="50" width="256"></canvas>
 			<ul>
-				<li><a href="https://github.com/jsantell/dancer.js" title="dancer.js on github">view API/source</a></li>
-				<li>by <a href="http://jsantell.com" title="Jordan Santell">jordan santell</a></li>
-			</ul>
-		</div>
-		<div id="songinfo">
+			</ul> </div>
+           <!-- div id="songinfo">
 			<span>Now playing...</span>
 			<h3><a href="http://zirconstudios.bandcamp.com/album/unearthed" title="Zircon Studios Bandcamp">Zircon - Devil's Spirit</a></h3>
-		</div>
+		</div -->
 		<div id="loading">Loading . . .</div>
 		<!-- Demo dependencies -->
 		<script src="../lib/Three.js"></script>
@@ -39,6 +64,15 @@
 		<!-- Demo stuff -->
 		<script src="js/scene.js"></script>
 		<script src="js/player.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://textillate.js.org/assets/jquery.fittext.js"></script>
+    <script src="http://textillate.js.org/assets/jquery.lettering.js"></script>
+    <script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script src="http://textillate.js.org/jquery.textillate.js"></script>
+
+
+
 		<script>
 			(function () {
 				var fft = document.getElementById( 'fft' ),
