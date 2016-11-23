@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
-		<link href='css/dancer.css' rel='stylesheet' type='text/css'>
-  <link href="http://textillate.js.org/assets/animate.css" rel="stylesheet">
-  <link href="http://textillate.js.org/assets/style.css" rel="stylesheet">
-  <link href='//fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
+    <link href='css/dancer.css' rel='stylesheet' type='text/css'>
+    <link href="http://textillate.js.org/assets/animate.css" rel="stylesheet">
+    <link href="http://textillate.js.org/assets/style.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
 
         <style>
             .playground .viewport .tlt {
@@ -15,36 +15,41 @@
                 font-size: 35;
                 width: 100%;
             }
+            .playground .viewport .tlt {
+                font-size: 3.5em;
+            }
+            #loading {
+                background-color: transparent;
+                border: 0px solid #ccc;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 60px;
+                margin-left: 800px;
+                margin-top: 300px;
+                opacity: 0.9;
+                padding: 10px;
+                position: absolute;
+                text-align: center;
+                width: 1200px;
+            }
         </style>
 	</head>
 	<body>
-<div class="grid grid-pad">
-    <section class="col-1-1">
-        <div class="playground grid">
-          <div class="col-1-1 viewport">
-              <div class="tlt">
-                <ul class="texts" style="display: block">
-                </ul>
-              </div>
+		<div id="info">
+			<canvas id="fft" height="50" width="256"></canvas>
+			<ul>
+			</ul> </div>
+		<div id="loading">
+            <div class="load">
+                 Loading . . .
+            </div>
+          <div class="viewport">
               <div class="tlt">
                 <ul class="texts" style="display: block">
                 </ul>
               </div>
           </div>
-         </div>
         </div>
-    </section>
-</div>
-
-		<div id="info">
-			<canvas id="fft" height="50" width="256"></canvas>
-			<ul>
-			</ul> </div>
-           <!-- div id="songinfo">
-			<span>Now playing...</span>
-			<h3><a href="http://zirconstudios.bandcamp.com/album/unearthed" title="Zircon Studios Bandcamp">Zircon - Devil's Spirit</a></h3>
-		</div -->
-		<div id="loading">Loading . . .</div>
 		<!-- Demo dependencies -->
 		<script src="../lib/Three.js"></script>
 		<script src="../lib/Stats.js"></script>
